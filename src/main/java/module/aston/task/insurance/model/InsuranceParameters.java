@@ -9,12 +9,13 @@ import java.time.LocalDate;
 
 /**
  * main input object with values for calculation
- * @param variant validated must not be null for all calculations
- * @param startDate validated must not be null for all calculations
- * @param endDate validated must not be null for CUSTOM variant (see CustomValidationConstraint class)
- * @param type validated must not be null for all calculations
- * @param cancellation not validated => can be null, in this case default false is used
- * @param sport not validate => can be null, in this case default false is used
+ *
+ * @param variant         validated must not be null for all calculations
+ * @param startDate       validated must not be null for all calculations
+ * @param endDate         validated must not be null for CUSTOM variant (see CustomValidationConstraint class)
+ * @param type            validated must not be null for all calculations
+ * @param cancellation    not validated => can be null, in this case default false is used
+ * @param sport           not validate => can be null, in this case default false is used
  * @param numberOfPersons validated, possible values are set of {1, 2, 3}
  */
 public record InsuranceParameters(@NotNull InsuranceVariant variant, @NotNull LocalDate startDate,
