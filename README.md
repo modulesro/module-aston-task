@@ -74,7 +74,8 @@ Beside implementing functionality there has been also effort to demonstrate usag
 8, automated tests - junit tests without spring context; integration tests with spring context 
 
 Other notes:
-
+ * main test case calculation from task example (14.04 EUR) is implemented in 
+   InsuranceControllerIntegrationTests.testCalculationSuccess   
  * base rates are stored in DB and loaded on application startup, additional rates are stored in application.properties file (could be also in DB)
  * as much as possible used spring autoconfiguration
  * no need to use complex JPA  - used only simple spring JDBC repository default implementation
